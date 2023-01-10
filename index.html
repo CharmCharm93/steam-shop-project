@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Steam shop</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav-bar">
+      <div class="left-nav-bar">
+        <div class="steam-logo">
+          <a href="https://store.steampowered.com/" class="logo-link">
+            <img
+              src="https://store.akamai.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"
+              alt="steam"
+              width="176"
+              height="44"
+            />
+          </a>
+        </div>
+        <form action="#">
+          <div class="search-bar">
+            <input
+              type="text"
+              placeholder="E.g Genshin Impact"
+              class="search-input-box"
+              autocomplete="off"
+            />
+            <button id="search-btn">Search</button>
+          </div>
+        </form>
+      </div>
+      <div class="right-nav-bar">
+        <a href="#">About us</a>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="banner">
+        <div class="wrap-header-content">
+          <h1 class="welcome-content">Welcome to mini-project Steam shop</h1>
+          <h3 class="welcome-content">
+            Discover most featured games
+            <span
+              id="featured-games"
+              class="featured-games"
+              onclick="renderFeaturedGame()"
+              >here</span
+            >
+          </h3>
+        </div>
+      </div>
+      <div class="genres-tittle">ALL GAMES</div>
+      <div class="wrap-main-content">
+        <div class="left">
+          <div class="left-side-categories">
+            <span class="bold">Genres</span>
+            <ul class="genres-group">
+              <li>↻</li>
+            </ul>
+          </div>
+        </div>
+        <div id="game-display-section" class="right">
+          <!-- START GAME BOX DISPLAY -->
+          <!-- <div class="game-box" onclick="renderGameDetails()">
+           
+              <div class="header-image">
+                <img src="#" alt="game-banner" />
+              </div>
+              <div class="wrap-game-information">
+                <div class="game-name">CS</div>
+                <div class="game-price">Price: $10</div>
+              </div>
+           
+          </div> -->
+          <!-- END GAME BOX DISPLAY -->
+
+          <!-- START LOADING -->
+          <div id="loading" class="loading-red-center">
+            <h3>Loading ...</h3>
+          </div>
+          <!-- END LOADING -->
+
+          <!-- START GAME DETAILS DISPLAY -->
+          <!-- <div class="display-game-detail">
+            <div class="game-detail-header">
+              <h2>Genshin impact</h2>
+            </div>
+            <div class="game-detail-main">
+              <div class="image-wrapper">
+                <img src="#" alt="game-image" />
+              </div>
+              <div class="wraper-game-description">
+                <div class="game-description">Game discription here</div>
+                <div class="game-subinformation">
+                  <p>Price: $10</p>
+                  <p>Required age: 15+</p>
+                  <p>Developer: Valve</p>
+                  <p>Release date: 10/10/2020</p>
+                </div>
+              </div>
+            </div>
+            <div class="game-detail-tag">
+              <p>Popular user-defined tags for this product:</p>
+              <div class="wrapper-tags">
+                <div class="tag">Action</div>
+                <div class="tag">RPG</div>
+                <div class="tag">3D</div>
+              </div>
+            </div>
+          </div> -->
+          <!-- END GAME DETAILS DISPLAY -->
+        </div>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
